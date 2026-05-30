@@ -388,18 +388,26 @@ a {
 }
 
 .skill-category {
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
-  padding: 1.35rem;
+  padding: 0;
   box-shadow: var(--shadow);
 }
 
 .skill-category h3 {
-  margin: 0 0 1rem;
-  color: var(--navy);
+  margin: 0;
+  background: var(--navy-2);
+  color: var(--white);
+  border-bottom: 4px solid var(--gold);
+  padding: 1rem 1.15rem;
   font-size: 1.2rem;
   line-height: 1.25;
+}
+
+.skill-category .skill-cloud {
+  padding: 1.2rem;
 }
 
 .skill-cloud span {
@@ -407,9 +415,9 @@ a {
   align-items: center;
   min-height: 38px;
   padding: 0.45rem 0.7rem;
-  border: 1px solid rgba(23, 58, 99, 0.2);
+  border: 1px solid rgba(23, 58, 99, 0.32);
   border-radius: 6px;
-  background: var(--blue-2);
+  background: var(--white);
   color: var(--navy-2);
   font-weight: 750;
 }
